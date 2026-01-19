@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VillaggioMC - Sito Ufficiale</title>
     <style>
+        /* Sfondo e stile generale - Tema Villaggio (Verde e Oro) */
         body {
             margin: 0;
             padding: 0;
@@ -18,11 +19,34 @@
             padding-bottom: 50px;
         }
 
-        .header { margin-top: 60px; text-align: center; }
-        .header h1 { font-size: 52px; margin: 10px 0; color: #f1c40f; text-shadow: 2px 2px 4px #000; }
-        .header p { font-size: 19px; font-style: italic; background: rgba(0,0,0,0.3); padding: 5px 15px; border-radius: 20px; }
+        /* Header con Titolo e Descrizione */
+        .header {
+            margin-top: 60px;
+            text-align: center;
+        }
 
-        .container { width: 85%; max-width: 500px; margin-top: 40px; }
+        .header h1 {
+            font-size: 56px;
+            margin: 10px 0;
+            color: #f1c40f; 
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+        }
+
+        .header p {
+            font-size: 20px;
+            font-style: italic;
+            background: rgba(0,0,0,0.4);
+            padding: 8px 20px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        /* Contenitore dei bottoni principali */
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin-top: 40px;
+        }
 
         .button {
             display: block;
@@ -30,78 +54,86 @@
             border: 2px solid #f1c40f;
             color: #f1c40f;
             text-decoration: none;
-            padding: 18px;
-            margin-bottom: 15px;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: 0.4s;
-            text-align: center;
-        }
-
-        .button:hover { background: #f1c40f; color: #1a2a1a; letter-spacing: 2px; }
-
-        /* --- SEZIONE CHI SIAMO --- */
-        .about-section {
-            background: rgba(0, 0, 0, 0.4);
-            border-left: 5px solid #f1c40f;
             padding: 20px;
-            margin-top: 40px;
-            width: 85%;
-            max-width: 600px;
-            border-radius: 0 15px 15px 0;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.4s all ease;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
-        .about-section h2 { color: #f1c40f; margin-top: 0; }
-        .about-section p { line-height: 1.6; font-size: 16px; }
 
-        /* --- SEZIONE STORE --- */
-        .store-title { margin-top: 50px; color: #f1c40f; font-size: 32px; text-transform: uppercase; }
-        .store-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; width: 90%; max-width: 800px; margin-top: 20px; }
-        .store-item { background: rgba(0, 0, 0, 0.5); border: 1px solid #f1c40f; border-radius: 15px; padding: 20px; text-align: center; transition: 0.3s; }
-        .store-item:hover { transform: translateY(-10px); background: rgba(0, 0, 0, 0.7); }
-        .store-item h3 { margin: 0 0 10px 0; color: #f1c40f; }
+        /* Effetto quando passi il mouse sopra i bottoni */
+        .button:hover {
+            background: #f1c40f;
+            color: #1a2a1a;
+            transform: translateY(-3px);
+            letter-spacing: 1px;
+        }
+
+        /* Sezione Informativa "Chi Siamo" */
+        .about-section {
+            background: rgba(0, 0, 0, 0.5);
+            border-left: 6px solid #f1c40f;
+            padding: 25px;
+            margin-top: 50px;
+            width: 85%;
+            max-width: 650px;
+            border-radius: 0 20px 20px 0;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .about-section h2 {
+            color: #f1c40f;
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            font-size: 17px;
+            margin-bottom: 0;
+        }
+
+        /* Footer semplice */
+        .footer {
+            margin-top: auto;
+            padding-top: 60px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
 
     <div class="header">
         <h1>🏡 VillaggioMC</h1>
-        <p>Benvenuti nella nostra community Survival!</p>
+        <p>Più di un server, una vera community Survival!</p>
     </div>
 
     <div class="container">
-        <a href="#" class="button">Scopri il Server!</a>
-        <a href="https://discord.gg/7ChEGbC9Vu" target="_blank" class="button">Entra nella Piazza (Discord)</a>
+        <a href="#" class="button">🎮 Scopri il Server!</a>
+        
+        <a href="store.html" class="button">🛒 Visita lo Store Ufficiale</a>
+        
+        <a href="https://discord.gg/7ChEGbC9Vu" target="_blank" class="button">💬 Entra nella Piazza (Discord)</a>
+        
+        <a href="#" class="button">⚖️ Regolamento</a>
     </div>
 
     <div class="about-section">
-        <h2>📜 Chi Siamo</h2>
+        <h2>📜 La nostra storia</h2>
         <p>
-            Benvenuti su <b>VillaggioMC</b>! Siamo una realtà nata dalla passione per il survival puro e la collaborazione tra giocatori. 
-            Il nostro obiettivo è offrire un'esperienza di gioco sicura, divertente e priva di tossicità. 
-            Qui, ogni costruzione ha una storia e ogni giocatore è parte della famiglia. 
-            Non siamo solo un server, siamo un villaggio!
+            <b>VillaggioMC</b> nasce con un'idea chiara: creare un luogo dove ogni giocatore possa sentirsi a casa. 
+            Siamo stanchi dei server tossici e delle truffe: qui troverai uno staff presente, 
+            meccaniche di gioco bilanciate e un mondo survival tutto da scoprire insieme ai tuoi amici. 
+            Il nostro villaggio cresce ogni giorno grazie a voi!
         </p>
     </div>
 
-    <h2 class="store-title">🛒 Store Ufficiale</h2>
-    
-    <div class="store-grid">
-        <div class="store-item">
-            <h3>Rank EROE</h3>
-            <p>Accesso al comando /fly e kit settimanale.</p>
-            <a href="https://discord.gg/7ChEGbC9Vu" class="button" style="font-size: 14px; padding: 10px;">Acquista</a>
-        </div>
-        <div class="store-item">
-            <h3>Rank LEGENDA</h3>
-            <p>Tutti i vantaggi Eroe + Tag esclusiva.</p>
-            <a href="https://discord.gg/7ChEGbC9Vu" class="button" style="font-size: 14px; padding: 10px;">Acquista</a>
-        </div>
-        <div class="store-item">
-            <h3>Pacchetto CHIAVI</h3>
-            <p>5x Chiavi Epiche per le casse allo Spawn.</p>
-            <a href="https://discord.gg/7ChEGbC9Vu" class="button" style="font-size: 14px; padding: 10px;">Acquista</a>
-        </div>
+    <div class="footer">
+        &copy; 2024 VillaggioMC - Creato con passione.
     </div>
 
 </body>
