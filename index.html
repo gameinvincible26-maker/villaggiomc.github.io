@@ -5,47 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VillaggioMC - Sito Ufficiale</title>
     <style>
-        /* Sfondo verde natura per staccare dal blu di Pasquitos */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(180deg, #1a2a1a 0%, #2d4a2d 50%, #4a773c 100%);
-            height: 100vh;
+            min-height: 100vh;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 50px;
         }
 
-        .header {
-            margin-top: 60px;
-            text-align: center;
-        }
+        .header { margin-top: 60px; text-align: center; }
+        .header h1 { font-size: 52px; margin: 10px 0; color: #f1c40f; text-shadow: 2px 2px 4px #000; }
+        .header p { font-size: 19px; font-style: italic; background: rgba(0,0,0,0.3); padding: 5px 15px; border-radius: 20px; }
 
-        /* Titolo color Oro/Legno unico */
-        .header h1 {
-            font-size: 52px;
-            margin: 10px 0;
-            color: #f1c40f; 
-            text-shadow: 2px 2px 4px #000;
-        }
+        .container { width: 85%; max-width: 500px; margin-top: 40px; }
 
-        .header p {
-            font-size: 19px;
-            font-style: italic;
-            background: rgba(0,0,0,0.3);
-            padding: 5px 15px;
-            border-radius: 20px;
-        }
-
-        .container {
-            width: 85%;
-            max-width: 500px;
-            margin-top: 40px;
-        }
-
-        /* Bottoni stile VillaggioMC */
         .button {
             display: block;
             background: rgba(45, 74, 45, 0.9);
@@ -61,12 +39,27 @@
             text-align: center;
         }
 
-        /* Effetto al passaggio del mouse */
-        .button:hover {
-            background: #f1c40f;
-            color: #1a2a1a;
-            letter-spacing: 2px;
+        .button:hover { background: #f1c40f; color: #1a2a1a; letter-spacing: 2px; }
+
+        /* --- SEZIONE CHI SIAMO --- */
+        .about-section {
+            background: rgba(0, 0, 0, 0.4);
+            border-left: 5px solid #f1c40f;
+            padding: 20px;
+            margin-top: 40px;
+            width: 85%;
+            max-width: 600px;
+            border-radius: 0 15px 15px 0;
         }
+        .about-section h2 { color: #f1c40f; margin-top: 0; }
+        .about-section p { line-height: 1.6; font-size: 16px; }
+
+        /* --- SEZIONE STORE --- */
+        .store-title { margin-top: 50px; color: #f1c40f; font-size: 32px; text-transform: uppercase; }
+        .store-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; width: 90%; max-width: 800px; margin-top: 20px; }
+        .store-item { background: rgba(0, 0, 0, 0.5); border: 1px solid #f1c40f; border-radius: 15px; padding: 20px; text-align: center; transition: 0.3s; }
+        .store-item:hover { transform: translateY(-10px); background: rgba(0, 0, 0, 0.7); }
+        .store-item h3 { margin: 0 0 10px 0; color: #f1c40f; }
     </style>
 </head>
 <body>
@@ -78,11 +71,37 @@
 
     <div class="container">
         <a href="#" class="button">Scopri il Server!</a>
-        
-        <a href="#" class="button">Store</a>
-        <a href="#" class="button">Leggi le Regole</a>
-        
         <a href="https://discord.gg/7ChEGbC9Vu" target="_blank" class="button">Entra nella Piazza (Discord)</a>
+    </div>
+
+    <div class="about-section">
+        <h2>📜 Chi Siamo</h2>
+        <p>
+            Benvenuti su <b>VillaggioMC</b>! Siamo una realtà nata dalla passione per il survival puro e la collaborazione tra giocatori. 
+            Il nostro obiettivo è offrire un'esperienza di gioco sicura, divertente e priva di tossicità. 
+            Qui, ogni costruzione ha una storia e ogni giocatore è parte della famiglia. 
+            Non siamo solo un server, siamo un villaggio!
+        </p>
+    </div>
+
+    <h2 class="store-title">🛒 Store Ufficiale</h2>
+    
+    <div class="store-grid">
+        <div class="store-item">
+            <h3>Rank EROE</h3>
+            <p>Accesso al comando /fly e kit settimanale.</p>
+            <a href="https://discord.gg/7ChEGbC9Vu" class="button" style="font-size: 14px; padding: 10px;">Acquista</a>
+        </div>
+        <div class="store-item">
+            <h3>Rank LEGENDA</h3>
+            <p>Tutti i vantaggi Eroe + Tag esclusiva.</p>
+            <a href="https://discord.gg/7ChEGbC9Vu" class="button" style="font-size: 14px; padding: 10px;">Acquista</a>
+        </div>
+        <div class="store-item">
+            <h3>Pacchetto CHIAVI</h3>
+            <p>5x Chiavi Epiche per le casse allo Spawn.</p>
+            <a href="https://discord.gg/7ChEGbC9Vu" class="button" style="font-size: 14px; padding: 10px;">Acquista</a>
+        </div>
     </div>
 
 </body>
