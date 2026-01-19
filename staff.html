@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff di VillaggioMC</title>
+    <style>
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #1a2a1a; color: white;
+            display: flex; flex-direction: column; align-items: center;
+            padding-bottom: 50px;
+        }
+        .nav { width: 100%; padding: 20px; background: rgba(0,0,0,0.5); text-align: center; }
+        .nav a { color: #f1c40f; text-decoration: none; font-weight: bold; margin: 0 20px; }
+        
+        .staff-header { margin: 50px 0; text-align: center; }
+        .staff-header h1 { color: #f1c40f; font-size: 42px; text-shadow: 2px 2px #000; }
+        .staff-header p { font-size: 18px; opacity: 0.9; }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px; width: 90%; max-width: 1000px; margin-top: 30px;
+        }
+
+        .staff-member {
+            background: #2d4a2d; border: 2px solid #f1c40f;
+            border-radius: 15px; padding: 20px; text-align: center;
+            transition: 0.3s;
+        }
+        .staff-member:hover { transform: translateY(-8px); box-shadow: 0 8px 15px rgba(0,0,0,0.4); }
+
+        .staff-member img {
+            width: 100px; height: 100px;
+            border-radius: 50%; /* Rende l'immagine circolare */
+            border: 3px solid #f1c40f;
+            margin-bottom: 15px;
+        }
+        .staff-member h3 { color: #f1c40f; margin-bottom: 5px; }
+        .staff-member .role { font-style: italic; font-size: 14px; opacity: 0.8; margin-bottom: 10px; }
+        .staff-member .quote { font-size: 15px; margin-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="nav"><a href="index.html">← Torna alla Home</a></div>
+
+    <div class="staff-header">
+        <h1>👑 Il Nostro Staff</h1>
+        <p>Le persone dietro VillaggioMC, sempre pronte ad aiutare!</p>
+    </div>
+
+    <div class="staff-grid">
+        <div class="staff-member">
+            <img src="https://minotar.net/avatar/NomeUtente1/100.png" alt="Testa di NomeUtente1">
+            <h3>NomeUtente1</h3>
+            <div class="role">Fondatore & Developer</div>
+            <p class="quote">"Costruiamo insieme il futuro del Villaggio!"</p>
+        </div>
+
+        <div class="staff-member">
+            <img src="https://minotar.net/avatar/NomeUtente2/100.png" alt="Testa di NomeUtente2">
+            <h3>NomeUtente2</h3>
+            <div class="role">Admin & Mod Manager</div>
+            <p class="quote">"La sicurezza e il divertimento sono la nostra priorità."</p>
+        </div>
+
+        <div class="staff-member">
+            <img src="https://minotar.net/avatar/NomeUtente3/100.png" alt="Testa di NomeUtente3">
+            <h3>NomeUtente3</h3>
+            <div class="role">Builder & Community Manager</div>
+            <p class="quote">"Ogni villager merita un posto speciale nel nostro mondo!"</p>
+        </div>
+
+        </div>
+</body>
+</html>
