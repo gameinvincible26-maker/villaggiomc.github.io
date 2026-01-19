@@ -21,8 +21,8 @@
 
         .staff-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px; width: 90%; max-width: 1000px; margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px; width: 95%; max-width: 1100px; margin-top: 30px;
         }
 
         .staff-member {
@@ -34,24 +34,24 @@
 
         .staff-member img {
             width: 100px; height: 100px;
-            border-radius: 15px; /* Squadrate stile Minecraft */
+            border-radius: 15px;
             border: 3px solid #f1c40f;
             margin-bottom: 15px;
             background: #1a2a1a;
         }
-        .staff-member h3 { color: #f1c40f; margin-bottom: 5px; font-size: 22px; }
+        .staff-member h3 { color: #f1c40f; margin-bottom: 5px; font-size: 20px; }
         .staff-member .role { 
             font-weight: bold; 
-            font-size: 14px; 
+            font-size: 12px; 
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #ffffff;
-            background: rgba(0,0,0,0.3);
             display: inline-block;
-            padding: 2px 10px;
+            padding: 4px 12px;
             border-radius: 5px;
+            margin-bottom: 10px;
         }
-        .staff-member .quote { font-size: 15px; margin-top: 15px; font-style: italic; opacity: 0.9; }
+        .staff-member .quote { font-size: 14px; font-style: italic; opacity: 0.9; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; }
     </style>
 </head>
 <body>
@@ -79,16 +79,30 @@
         </div>
 
         <div class="staff-member">
+            <img src="https://minotar.net/helm/RIP_dna/100.png" alt="Testa di RIP_dna">
+            <h3>RIP_dna</h3>
+            <div class="role" style="background: #9b59b6;">Developer</div>
+            <p class="quote">"Ottimizzo il codice per rendere l'esperienza di gioco perfetta."</p>
+        </div>
+
+        <div class="staff-member">
             <img src="https://minotar.net/helm/Francy321/100.png" alt="Testa di Francy321">
             <h3>Francy321</h3>
             <div class="role" style="background: #27ae60;">Admin</div>
             <p class="quote">"Qui per aiutarvi e far rispettare le leggi del Villaggio."</p>
         </div>
 
+        <div class="staff-member">
+            <img src="https://minotar.net/helm/serianwgf/100.png" alt="Testa di serianwgf">
+            <h3>serianwgf</h3>
+            <div class="role" style="background: #2980b9;">Sr. Helper</div>
+            <p class="quote">"Sempre disponibile per ogni dubbio o problema dei cittadini!"</p>
+        </div>
+
     </div>
 
-    <div style="margin-top: 50px; opacity: 0.6; font-size: 12px;">
-        Le skin sono caricate direttamente dai server Mojang.
+    <div style="margin-top: 50px; opacity: 0.6; font-size: 12px; text-align: center;">
+        Le skin sono caricate in tempo reale tramite Mojang API.
     </div>
 
 </body>
