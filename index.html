@@ -133,8 +133,26 @@
     </div>
 
     <div class="footer">
-        &copy; 2024 VillaggioMC - Creato con orgoglio.
+        &copy; 2026 VillaggioMC - Creato con orgoglio.
     </div>
+    <a href="javascript:void(0)" class="button" onclick="copyIP()" id="ipButton">📋 Copia IP Server</a>
+
+<script>
+function copyIP() {
+    const ip = "villaggiomc.mcsh.io";
+    navigator.clipboard.writeText(ip).then(() => {
+        const btn = document.getElementById('ipButton');
+        btn.innerHTML = "✅ IP Copiato!";
+        btn.style.background = "#f1c40f";
+        btn.style.color = "#1a2a1a";
+        setTimeout(() => {
+            btn.innerHTML = "📋 Copia IP Server";
+            btn.style.background = "rgba(45, 74, 45, 0.9)";
+            btn.style.color = "#f1c40f";
+        }, 2000);
+    });
+}
+</script>
 
 </body>
 </html>
